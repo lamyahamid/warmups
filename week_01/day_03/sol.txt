@@ -1,0 +1,35 @@
+var num = prompt("please enter a positive number");
+var str ="0";
+for (var i=1; i<=num;i++){
+  if (num%i==0){
+   str = str+","+i;
+  }
+
+}
+console.log(str);
+ if (str.includes("3") && str.includes("5") &&str.includes("7")){
+  console.log("pling plang plong");
+}
+
+else if (str.includes("3")&&str.includes("5")){
+  console.log("pling plang");
+}
+else if (str.includes("3")&&str.includes("7")){
+  console.log("pling plong");
+}
+else if (str.includes("5")&&str.includes("7")){
+  console.log("plang plong");
+}
+else if (str.includes("3")){
+  console.log("pling");
+}
+else if (str.includes("5")){
+  console.log("plang");
+}
+else if (str.includes("7")){
+  console.log("plong");
+}
+
+else {
+console.log(num);
+}
